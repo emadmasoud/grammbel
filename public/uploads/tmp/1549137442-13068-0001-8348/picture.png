@@ -1,0 +1,35 @@
+toys = ["cars", "board games", "board game"]
+
+names_1 = %w[Jack Jill John James] 
+
+Array.new(10, "Hello")
+
+toys[-1] #last item in array
+toys[toys.length - 1] #last item in array
+
+names = ["Tom", "Cameron", "Bob"]
+names.fetch(2) # Returns "Bob"
+names.fetch(5, "Unknown") # 5 is not indexed so fetch will return unkn
+
+numbers = [4, 8, 15, 16, 23, 42, 59, 65]
+numbers[2, 4] # [15, 16, 23, 42] prints out an array from index 2 and prints following 4 numbers
+numbers[2..6] #[15, 16, 23, 42, 59]Range of indexes includes the index 6
+numbers[2...6] #[15, 16, 23, 42] Range does no include last index
+
+channels = ["CBS", "Fox", "ESPN", "UPN"]
+channels.values_at(0) # Returns ["CBS"] Return an array containing the values associated with the given keys.
+channels.slice(0) # "CBS" Return the values associated with the given keys.
+
+
+fruits = ["apple", "orange", "grape", "banana"]
+fruits[0] = "watermelon" #changes index 0 from apple to watermelon
+fruits[4] = "raspberry" #added a new item to array 
+my_array = ["a", "b", "c", 1, 2, 3]
+puts my_array.fetch(10)
+
+locations = ["House", "Aiport", "Bar"]
+p locations
+
+locations.insert(1, "Resturant")
+p locations
+

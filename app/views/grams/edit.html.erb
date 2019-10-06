@@ -1,0 +1,39 @@
+<%= simple_form_for @gram do |f| %>
+  <div class="container">
+  <div class="col row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+          <header class="card-header">
+            <%= f.error_notification %>
+            <h4 class="card-title mt-2">Edit Gram</h4>
+          </header>
+        <article class="card-body">
+          <form>
+          <br/>
+          <div class="form-row">
+            <div class="col form-group">
+              <%= f.input :message, label: "Edit Caption" %>
+            </div><!-- form-group end.// -->  
+          </div><!-- form-row end.// -->
+          <div class="form-row">
+            <div class="col form-group">
+             <label class="btn btn-success">
+              Upload Gram
+              <span style="display:none;">
+              <%= f.input :picture, class:"primary " %>
+              </span>
+              </label>
+            </div><!-- form-group end.// -->
+          </div><!-- form-row end.// -->   
+          <div class="form-row">
+            <div class="col form-group">
+              <%= f.button :submit, "Update",  class:"btn my-btn-form " %>
+            </div>
+          </div>  
+          </form>
+        </article>  
+      </div>
+      </div>
+    </div>
+  </div>
+<% end %>
